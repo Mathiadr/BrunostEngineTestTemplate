@@ -111,7 +111,7 @@ public class AssetCreator {
         animator.addState(orbShine);
         animator.setDefaultState(orbShine.title);
         shinyOrb.addComponent(animator);
-        shinyOrb.addComponent(new Orb()); // TODO: replace with custom class
+        //shinyOrb.addComponent(new Orb()); // TODO: replace with custom class
 
         CircleCollider circleCollider = new CircleCollider();
         circleCollider.setRadius(0.12f);
