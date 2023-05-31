@@ -1,11 +1,8 @@
 import no.brunostengine.*;
 import no.brunostengine.GameObject;
 import no.brunostengine.ResourcePool;
-import no.brunostengine.components.Animation;
 import no.brunostengine.components.Animator;
-import no.brunostengine.components.DefaultSideScrollerPlayerController;
-import no.brunostengine.components.Spritesheet;
-import no.brunostengine.components.templates.Coin;
+import no.brunostengine.components.templates.SideScrollerPlayerController;
 import no.brunostengine.physics.components.CapsuleCollider;
 import no.brunostengine.physics.components.CircleCollider;
 import no.brunostengine.physics.components.Rigidbody;
@@ -85,7 +82,7 @@ public class AssetCreator {
         rb.setMass(25.0f);
         ratgirl.addComponent(rb);
 
-        ratgirl.addComponent(new DefaultSideScrollerPlayerController());
+        ratgirl.addComponent(new SideScrollerPlayerController());
 
         ratgirl.transform.zIndex = 10;
 
